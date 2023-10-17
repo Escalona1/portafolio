@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gato Curioso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Gato Curioso</h1>
+
+    <div class="container">
+        <div class="cat" id="cat"></div>
+    </div>
+
+    <script>
+        document.addEventListener("mousemove", function(event) {
+            var cat = document.getElementById("cat");
+            cat.style.left = event.clientX + "px";
+            cat.style.top = event.clientY + "px";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    height: 300px;
+}
+
+.cat {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('cat.png');
+    background-size: cover;
+    transition: all 0.2s ease;
+}
+
+.cat:hover {
+    transform: scale(1.2);
+}
